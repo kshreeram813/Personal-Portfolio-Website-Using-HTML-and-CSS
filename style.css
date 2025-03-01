@@ -1,0 +1,265 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+}
+
+/* Header (Now Moves Up When Scrolling) */
+.header-container {
+    text-align: center;
+    padding: 60px 20px 20px; /* More space for better alignment */
+    transition: 0.3s ease-in-out;
+}
+
+.header-container h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.header-container {
+    margin-top: 50px; /* Adds space from the top */
+}
+
+
+/* Fixed Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: -40px;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 4px solid white;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Resume Button */
+.button {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff6f61, #ff9800);
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #ff5722, #ff9800);
+}
+
+/* Section */
+.section {
+    margin: 80px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.section:hover {
+    transform: scale(1.02);
+}
+
+/* Experience Section */
+.experience-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px; /* Adds space from the top */
+
+}
+
+/* Work Experience Section */
+.experience-card {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    text-align: center;
+    width: 50%; /* Adjust width for better alignment */
+    margin: 20px auto; /* Centering the card */
+}
+
+.experience-card h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.experience-card p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    width: 23%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Project Section */
+.project-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px; /* Adds space from the top */
+
+}
+
+.project-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 40%;
+    transition: 0.3s;
+}
+
+.project-item:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+/* Project Details */
+.project-details {
+    display: none;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.project-details.active {
+    display: block;
+}
+
+/* Contact Section */
+.contact a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    margin-top: 10px;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Dark Theme */
+.dark-theme {
+    background: linear-gradient(135deg, #121212, #292929);
+    color: #f0f0f0;
+}
+
+.dark-theme .section {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.dark-theme .card {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.dark-theme .button {
+    background: linear-gradient(135deg, #444, #666);
+}
+
+.dark-theme .theme-toggle {
+    background: #ff9800;
+}
+
+.dark-theme .theme-toggle:hover {
+    background: #ffcc00;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact-links a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+}
+
+.contact-links a:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+}
+
