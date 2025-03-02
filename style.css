@@ -36,24 +36,56 @@ nav {
     left: 0;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    gap: 15px;  /* Adds spacing between links */
     background: #333;
     padding: 10px 0;
     z-index: 1000;
+    flex-wrap: nowrap; /* Prevent wrapping */
 }
 
+/* Navigation Links */
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    padding: 10px 20px;
+    font-size: 18px;  /* Default size */
+    padding: 10px 15px;
     border-radius: 25px;
     transition: 0.3s;
 }
 
+/* Hover Effect */
 nav a:hover {
     background: rgba(255, 255, 255, 0.4);
+}
+
+/* 🟢 Highlight Active Section */
+nav a.active {
+    background: #14c756; /* Green highlight for active section */
+    font-weight: bold;
+}
+
+/* 📱 Responsive: Shrink Font Size for Smaller Screens */
+@media screen and (max-width: 900px) {
+    nav a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav a {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
 }
 
 /* Hero Section */
