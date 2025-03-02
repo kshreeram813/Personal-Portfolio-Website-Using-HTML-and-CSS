@@ -213,7 +213,6 @@ nav a.active {
     padding: 20px;
     border-radius: 10px;
     cursor: pointer;
-    width: 40%;
     transition: 0.3s;
 }
 
